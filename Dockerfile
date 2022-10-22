@@ -12,7 +12,7 @@ RUN mkdir -m 700 /root/.ssh; \
   touch -m 600 /root/.ssh/known_hosts; \
   ssh-keyscan github.com > /root/.ssh/known_hosts
 
-RUN --mount=type=ssh,id=github git clone git@github.com:anik0o/FullStack.git
+RUN --mount=type=ssh,id=github git@github.com:anik0o/FullStack.git
 
 WORKDIR /usr/app/FullStack/Simpleweb
 RUN npm install
