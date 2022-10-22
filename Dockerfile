@@ -1,7 +1,7 @@
 #Podanie obrazu bazowego
 FROM node:alpine
 
-WORKDIR /usr/src/app
+WORKDIR /usr/app
 
 # Install some depenendencies
 RUN apk update
@@ -14,7 +14,7 @@ RUN mkdir -m 700 /root/.ssh; \
 
 RUN --mount=type=ssh,id=github git clone git@github.com:anik0o/FullStack.git
 
-WORKDIR /usr/src/app/FullStack/Simpleweb
+WORKDIR /usr/app/FullStack/Simpleweb
 RUN npm install
 COPY ./ ./
 EXPOSE 80
