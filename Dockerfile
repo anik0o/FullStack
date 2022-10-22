@@ -1,9 +1,9 @@
-#Podanie obrazu bazowego
+#obraz bazowy
 FROM node:alpine
 
 WORKDIR /usr/app
 
-# Install some depenendencies
+
 RUN apk update
 RUN apk add git
 RUN apk add -qU openssh
