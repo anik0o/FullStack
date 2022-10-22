@@ -1,5 +1,5 @@
 #Podanie obrazu bazowego
-FROM alpine
+FROM node:alpine
 
 WORKDIR /usr/src/app
 
