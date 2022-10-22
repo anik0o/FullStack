@@ -15,7 +15,9 @@ RUN mkdir -m 700 /root/.ssh; \
 RUN --mount=type=ssh,id=github git clone git@github.com:anik0o/FullStack.git
 
 WORKDIR /usr/app/FullStack/Simpleweb
-
+RUN npm install
 COPY ./ ./
 EXPOSE 3000
+
+CMD ["npm", "start"]  
 
