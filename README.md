@@ -1,7 +1,7 @@
 1. Link do GitHuba:
   https://github.com/anik0o/FullStack
 
-Link do DockerHuba:
+2. Link do DockerHuba:
   https://hub.docker.com/repository/docker/anik0o/full.stack
 
 Komenda do budowania obrazu:
