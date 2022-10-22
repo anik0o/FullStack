@@ -3,8 +3,6 @@ FROM node:alpine
 
 WORKDIR /usr/app
 
-
-RUN apk update
 RUN apk add git
 RUN apk add -qU openssh
 
